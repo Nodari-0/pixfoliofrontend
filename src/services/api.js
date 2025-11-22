@@ -1,7 +1,7 @@
 import axios from "axios";
 
-// Use environment variable for API URL, fallback to localhost for development
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5005";
+// Use environment variable for API URL, fallback to deployed backend
+const API_URL = import.meta.env.VITE_API_URL || "https://pixfolio--6gtwzsxlhwdc.code.run";
 
 // Create axios instance with default config
 const api = axios.create({
